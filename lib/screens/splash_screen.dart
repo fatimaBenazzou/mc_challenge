@@ -38,6 +38,7 @@ class SplashScreen extends StatelessWidget {
                       SizedBox(
                         width: width * 0.55,
                         child: Text('Welcome To Dash App',
+          
                             textAlign: TextAlign.center,
                             style: Theme.of(context).textTheme.headlineLarge),
                       ),
@@ -45,12 +46,13 @@ class SplashScreen extends StatelessWidget {
                   )),
                   // button
                   ElevatedButton(
-                   onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const HomeScreen()),
-            );
-          },
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const HomeScreen()),
+                      );
+                    },
                     child: const Text('Get Started'),
                   )
                 ],

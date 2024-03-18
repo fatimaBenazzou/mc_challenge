@@ -20,24 +20,23 @@ final theme = ThemeData(
   colorScheme: ColorScheme.fromSeed(
     seedColor: const Color.fromARGB(255, 58, 111, 226),
   ),
-   elevatedButtonTheme: ElevatedButtonThemeData(
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.white,
-            fixedSize: const Size(214, 53),
-            shape:
-                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-            textStyle: TextStyle(
-                color: kColorScheme.primaryContainer,
-                fontWeight: FontWeight.bold,
-                fontSize: 18),
-          ),
-        ),
-  textTheme: GoogleFonts.poppinsTextTheme(),
+  elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ElevatedButton.styleFrom(
+      backgroundColor: Colors.white,
+      fixedSize: const Size(214, 53),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      textStyle: TextStyle(
+          color: kColorScheme.primaryContainer,
+          fontWeight: FontWeight.bold,
+          fontSize: 18),
+    ),
+  ),
+  textTheme: GoogleFonts.poppinsTextTheme()
+      .copyWith(headlineLarge: const TextStyle(color: Colors.white)),
 );
 
-
 void main() {
-   WidgetsFlutterBinding.ensureInitialized();
+  WidgetsFlutterBinding.ensureInitialized();
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
